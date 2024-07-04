@@ -1,0 +1,143 @@
+:root {
+  --content-width: 900px;
+  --primary: rgb(19, 100, 241);
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Inter', 'ChalkBoard';
+}
+
+button.primary {
+  min-height: 36px;
+  width: auto;
+  cursor: pointer;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-width: 1px;
+  border-radius: 2px;
+  border-style: solid;
+  padding: 0px 20px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-flex;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.3, 0, 0.2, 1);
+  transition-duration: 150ms;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  max-width: var(--content-width);
+  padding: 32px 24px;
+  margin: auto;
+}
+
+.nav-left-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left-container .menu button {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(95, 108, 125);
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: none;
+  box-sizing: border-box;
+}
+
+.nav-right-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;;
+}
+
+.menu button {
+  border: none;
+  background: transparent;
+}
+
+a.primary {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+main {
+  max-width: var(--content-width);
+  margin: auto;
+}
+
+h1.title {
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration-line: none;
+  /* line-height: 3.5rem; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.hero-container {
+  position: relative;
+  height: 400px;
+}
+
+.hero-text-container {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-cta-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.second-fold {
+  padding-top: 140px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.color-green {
+  color: rgb(1, 178, 86);
+}
+
+.razorpay-features p:not(:first-child) {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  gap: 42px;
+}

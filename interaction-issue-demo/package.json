@@ -1,0 +1,34 @@
+{
+  "name": "with-react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "abell dev --open",
+    "build": "abell generate"
+  },
+  "dependencies": {
+    "@razorpay/blade": "^11.23.2",
+    "@razorpay/i18nify-js": "^1.10.2",
+    "@razorpay/i18nify-react": "^4.0.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "styled-components": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.34",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "abell": "^1.0.0-beta.4",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

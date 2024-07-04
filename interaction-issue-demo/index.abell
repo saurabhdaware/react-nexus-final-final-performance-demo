@@ -1,0 +1,32 @@
+{{
+  import React from "react";
+  import ReactDOMServer from "react-dom/server";
+  import { StaticRouter } from 'react-router-dom/server';
+  import { ServerStyleSheet } from "styled-components";
+  import App from './src/App';
+}}
+{{
+  /** @declarations */
+
+  const sheet = new ServerStyleSheet();
+  const htmlContent = ReactDOMServer.renderToString(
+    sheet.collectStyles(
+      <StaticRouter location={props.path}>
+        <App />
+      </StaticRouter>
+    )
+  );
+  const styleTags = sheet.getStyleTags(); // or sheet.getStyleElement();
+}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{ styleTags }}
+  </head>
+  <body>
+    <div id="root">{{ htmlContent }}</div>
+    <script src="./src/client.tsx" type="module"></script>
+  </body>
+</html>
