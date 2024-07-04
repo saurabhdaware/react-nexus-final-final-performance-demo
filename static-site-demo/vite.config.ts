@@ -8,5 +8,6 @@ export default defineConfig({
       loader: 'jsx',
     }
   },
-  plugins: [react()],
+  // @ts-expect-error: abell types issue
+  plugins: [react({})],
 })
