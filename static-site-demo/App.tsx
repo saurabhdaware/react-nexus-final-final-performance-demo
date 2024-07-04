@@ -35,7 +35,7 @@ const App = () => {
               <a className="primary">Know More</a>
             </div>
           </div>
-          <img className="hero-image" src="./hero.png" width="600px" />
+          <img className="hero-image" src="./hero.png" loading="lazy" width="600px" />
         </div>
 
         <div className="second-fold">
