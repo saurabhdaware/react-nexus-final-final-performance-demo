@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "abell dev"
+    "dev": "abell dev",
+    "build": "abell build"
   },
   "type": "module",
   "devDependencies": {
